@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Заголовок</title>
+</head>
+
+<body class="page">
+	<header class="page__header header">
+		<a class="header__logo" href="index.html">
+			<span class="visually-hidden">Логотип.</span>
+			<svg class="header__logo-image" fill="currentColor">
+				<use href="/icons/sprite.svg#logo"></use>
+			</svg>
+		</a>
+	</header>
+
+	<main class="page__main">
+		<section class="cat">
+			<h1 class="cat__heading">Страница кота</h1>
+
+			<p class="cat__text">Ниже будет фото кота</p>
+
+			<picture class="cat__image">
+				<source type="image/webp" media="(min-width: 1440px)" srcset="images/cat-desktop.webp 1x, images/cat-desktop@2x.webp 2x" width="480" height="640">
+				<source type="image/webp" media="(min-width: 768px)" srcset="images/cat-tablet.webp 1x, images/cat-tablet@2x.webp 2x" width="480" height="640">
+				<source type="image/webp" srcset="images/cat-mobile.webp 1x, images/cat-mobile@2x.webp 2x" width="480" height="640">
+
+				<source media="(min-width: 1440px)" srcset="images/cat-desktop.jpg 1x, images/cat-desktop@2x.jpg 2x" width="480" height="640">
+				<source media="(min-width: 768px)" srcset="images/cat-tablet.jpg 1x, images/cat-tablet@2x.jpg 2x" width="480" height="640">
+
+				<img src="images/cat-mobile.jpg" srcset="images/cat-mobile@2x.jpg 2x" width="480" height="640" alt="Кот.">
+			</picture>
+		</section>
+	</main>
+</body>
+</html>
